@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
-    <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
 </head>
     <body>
-<style type="text/css">
+
+    <style type="text/css">
    	.tblCalc{
- 		border:3px solid green;
+ 		border:1px solid black;
  		margin:0;
  		padding:0;
- 		width:350px;
+ 		width:370px;
  		text-align:center;
  	}
  	.tblCalc input{
- 		border:1px solid green;
- 		width:40px;
- 		margin:6px;
+ 		border:1px solid black;
+ 		width:80px;
+ 		margin:10px;
  	}
 	 	#btnWide{
- 		width:100px;
+ 		width:370px;
  	}
  	#editWide{
- 		width:350px;
+ 		width:370px;
  	}
 </style>
+
 
 
 <form name="calc" action="">
@@ -43,8 +45,7 @@
          <td colspan="3"></td>
          <td><input name="btnClear" type="Button"
           	value="C" onclick="Clear()" /></td>
-         <td><input name="btnClearEntry" type="Button"
-          	value="CE" onclick="ClearEntry()" /></td>
+         
      </tr>
      <tr>
          <td><input name="btnSeven" type="Button"
@@ -86,8 +87,7 @@
           	value="0" onclick="NumPressed(0)"></td>
          <td><input name="btnDecimal" type="Button"
           	value="." onclick="Decimal()"></td>
-         <td><input name="btnNeg" type="button"
-          	value="+/-" onclick="Neg()" /></td>
+         
          <td colspan="2"><input id="btnWide" name="btnEquals"
           	type="Button" value="=" onclick="Operation('=')"></td>
      </tr>
